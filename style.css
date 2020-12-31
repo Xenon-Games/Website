@@ -1,38 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Abel&family=Audiowide&family=Raleway:ital,wght@0,200;0,400;0,800;1,200;1,400;1,800&family=Russo+One&family=Teko&display=swap');
 /*Raleway 200, 400, 800 and also a bunch of other stuff that I thought looked pretty cool*/
 body {
-  background-image: url(starry_sky.png);
+  background-image: url(starts-portrait.jpg);
 }
 .topImage {
-    max-width: 100%;
+  max-width: 100%;
 }
 .wrapper {
-    padding: 110px 80px 110px 80px
+  padding: 110px 80px 110px 80px
 }
 .grid-container1 {
   display: grid;
   grid-gap: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px;
   grid-template-columns: 1fr 1fr;
+  /*first grid container is two columns*/
 }
-.grid-containter2 {
+.grid-container2 {
   display: grid;
   grid-gap: 0px;
+  margin-left: 50px;
+  margin-right: 50px;
   grid-template-columns: 1fr 1fr 1fr;
-  /*grid-template-rows: auto auto auto;*/
+  /*first grid container is three columns*/
 }
-.itemLeft img {
-    max-width: 100%;
-}
-.itemRight img {
-    max-width: 100%;
-}
-.itemL img {
+.grid-container1 img {
   max-width: 100%;
 }
-.itemR img {
-  max-width: 100%;
-}
-.itemC img {
+.grid-container2 img {
   max-width: 100%;
 }
 .itemLeft {
@@ -49,13 +46,31 @@ body {
   grid-column-start: 1;
   grid-column-end: 2;
   background-color: black;
+  padding: 50px;
 }
 .itemC {
   grid-column-start: 2;
   grid-column-end: 3;
   background-color: black;
+  padding: 50px;
 }
 .itemR {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  background-color: black;
+  padding: 50px;
+}
+.itemL-img{
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background-color: black;
+}
+.itemC-img{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  background-color: black;
+}
+.itemR-img{
   grid-column-start: 3;
   grid-column-end: 4;
   background-color: black;
@@ -65,9 +80,12 @@ body {
   grid-column-end: 4;
   text-align: center;
   background-color: black;
+  padding: 0px;
 }
 .title {
   text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: black;
 }
 h1 {
